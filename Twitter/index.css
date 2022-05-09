@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+    --gray: rgb(107, 107, 107);
+    --gray2: rgb(59, 59, 59);
+    --blue: rgb(78, 167, 255);
+
+    --btext: 20px;
+}
+
+html {
+    color: white;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    width: 100%;
+    display: flex; 
+    flex-direction: row; 
+    background-color: black; 
+}
+
+body > div {
+    height: 100vh;
+    width: 1px;
+    background-color: var(--gray);
+}
+
+nav {
+    position: relative;
+    flex: 0.4;
+    vertical-align: left;
+    padding: 20px;
+    padding-left: 100px;
+}
+
+nav img{
+    width: 40px;
+    height: 40px;
+}
+
+nav > ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav > ul li{
+    padding: 15px 0;
+    font-size: var(--btext);
+    border-radius: 50px;
+}
+
+nav > ul li:hover{
+    background-color: var(--gray2);
+}
+
+
+.tweetButton {
+    margin-top: 20px;
+    font-size: var(--btext);
+    font-weight: bold;
+    background-color: var(--blue); /* Green */
+    width: 225px;
+    height: 50px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.profileLoging{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    width: 65%;
+}
+
+.profilePic{
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+.profileLoging > div p{
+    margin: 3px;
+}
+
+.profileLoging > div p:nth-child(2){
+    color: var(--gray);
+}
+
+.profileLoging > p{
+    position: absolute;
+    padding: 10px;
+    right: 0;
+}
+
+main {
+    margin: 0;
+    flex: 1;
+}
+
+main > div{
+    height: 1px;
+    width: 100%;
+    background-color: var(--gray);
+}
+
+header > p{
+    margin: 0;
+    padding: 20px;
+    font-size: var(--btext);
+    font-weight: bold;
+}
+
+aside{
+    flex: 0.75;
+}
+
+aside > div{
+    padding: 20px;
+}
