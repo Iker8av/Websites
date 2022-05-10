@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitter</title>
+    <link rel="shortcut icon" href="TwitterBlue.png">
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <nav>
-        <img src="" alt="Twitter logo">
+        <img src="TwitterWhite.png" alt="Twitter logo">
         <ul>
             <li><span></span>Home</li>
             <li><span></span>Explore</li>
@@ -22,7 +23,7 @@
         </ul>
         <button class="tweetButton">Tweet</button>
         <div class="profileLoging">
-            <img src="" alt="Profile Pic" class="profilePic"/>
+            <img src="profilePic.jpg" alt="Profile Pic" class="profilePic"/>
             <div>
                 <p>Iker Ochoa</p>
                 <p>@Iker_8av</p>
@@ -33,12 +34,14 @@
     <div></div>
     <main>
         <header>
-            <p>Home</p>
             <div>
-                <img src="" alt="Profile Pic" class="profilePic">  
-                <div>
-                    <input type="text">
-                    <div>
+                <p>Home</p>
+            </div>
+            <div>
+                <img src="profilePic.jpg" alt="Profile Pic" class="profilePic">  
+                <div class="tweetSpace">
+                    <textarea class="tweetText">What's happening?</textarea>
+                    <span>
                         <img src="" alt="Img">
                         <img src="" alt="GIF">
                         <img src="" alt="Poll">
@@ -47,18 +50,29 @@
                         <img src="" alt="Location">
 
                         <button>Tweet</button>
-                    </div>
+                    </span>
                 </div>
             </div>
         </header>
         <div></div>
-        <article>
-            <img src="" alt="Profile Pic" class="profilePic">
+        <article class="tweet">
+            <img src="profilePic.jpg" alt="Profile Pic" class="profilePic">
             <div>
-                <p>Profile Name Account</p>
-                <p>Tweet Content</p>
-
+                <div>
+                    <p>Profile Name Account</p>
+                    <p>@Profile User Account</p>
+                    <p>•</p>
+                    <p>23 hrs</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <div>Additional content</div>
+                <div class="tweetOpc">
+                    <span><img src="" alt="C">11</span>
+                    <span><img src="" alt="R">28</span>
+                    <span><img src="" alt="L">2,003</span>
+                    <span>R</span>
+                </div>
             </div>
         </article>
     </main>

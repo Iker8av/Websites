@@ -1,16 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 :root {
-    --gray: rgb(107, 107, 107);
-    --gray2: rgb(59, 59, 59);
-    --blue: rgb(78, 167, 255);
+    --gray: rgb(68, 68, 68);
+    --gray2: rgb(54, 54, 54);
+    --gray3: rgb(110, 110, 110);
+    --gray4: rgb(25, 24, 24);
+
+    --blue: rgb(49, 152, 255);
+    --blue2: rgb(36, 153, 255);
+    --blue3:rgb(50, 130, 210);
+    --green: rgb(28, 187, 7);
+    --red: rgb(213, 39, 39);
 
     --btext: 20px;
+    --mtext: 18px;
+    --stext: 14px;
 }
 
 html {
     color: white;
     margin: 0;
+    font-size: 15px;
 }
 
 body {
@@ -32,13 +42,14 @@ nav {
     position: relative;
     flex: 0.4;
     vertical-align: left;
-    padding: 20px;
+    padding: 15px;
     padding-left: 100px;
 }
 
 nav img{
-    width: 40px;
-    height: 40px;
+    display: block;
+    width: 30px;
+    padding-bottom: 10px;
 }
 
 nav > ul{
@@ -48,15 +59,17 @@ nav > ul{
 }
 
 nav > ul li{
-    padding: 15px 0;
+    display: inline-block;
+    padding: 15px;
     font-size: var(--btext);
     border-radius: 50px;
+    margin: 0 100px 0 0;
 }
 
 nav > ul li:hover{
-    background-color: var(--gray2);
+    background-color: var(--gray4);
+    cursor: pointer;
 }
-
 
 .tweetButton {
     margin-top: 20px;
@@ -84,8 +97,8 @@ nav > ul li:hover{
 .profilePic{
     border-radius: 50%;
     margin-right: 15px;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
 }
 
 .profileLoging > div p{
@@ -113,11 +126,141 @@ main > div{
     background-color: var(--gray);
 }
 
-header > p{
+header > div > p{
     margin: 0;
-    padding: 20px;
+    padding: 15px;
     font-size: var(--btext);
     font-weight: bold;
+}
+
+header > div:nth-child(2){
+    display: flex; 
+    flex-direction: row; 
+    margin: 15px;
+}
+
+.tweetText {
+    width: 100%;
+    height: 25px;
+    border: none;
+    background-color: black;
+    color: var(--gray3);
+    font-size: var(--btext);
+    margin-top: 10px;
+    resize: vertical;
+}
+
+.tweetSpace{
+    width: 100%;
+}
+
+.tweetSpace > div{
+    height: 1px;
+    width: 98%;
+    background-color: var(--gray);
+    margin: 10px 0;
+    padding: 0;
+}
+
+.tweetSpace > span{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    position: relative;
+    margin-top: 15px;
+}
+
+.tweetSpace > span > img{
+    width: 25px;
+    height: 25px;
+    margin: 5px 5px;
+}
+
+.tweetSpace > span > button{
+    position: absolute;
+    right: 10px;
+    width: 75px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: var(--blue); /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.tweetSpace > span > button:hover{
+    background-color: var(--blue3);
+}
+
+.tweet{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+
+.tweet > div p{
+    margin: 0 0 10px 0;
+}
+
+.tweet > div > div p{
+    color: var(--gray3);
+}
+
+.tweet > div p:first-child{
+    font-weight: bold;
+    color: white;
+}
+
+.tweet > div div:first-child{
+    display: flex; 
+    flex-direction: row;
+    gap: 10px;
+}
+
+.tweetOpc{
+    display: flex; 
+    flex-direction: row;
+    gap: 15%;
+    padding: 10px 0;
+    color: var(--gray3);
+}
+
+.tweetOpc span{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    transition: 0.2s linear;
+}
+
+.tweetOpc span:hover{
+    cursor: pointer;
+}
+
+.tweetOpc span:nth-child(1):hover{
+    color: var(--blue2);
+}
+.tweetOpc span:nth-child(2):hover{
+    color: var(--green);
+}
+.tweetOpc span:nth-child(3):hover{
+    color: var(--red);
+}
+.tweetOpc span:nth-child(4):hover{
+    color: var(--blue2);
+}
+
+.tweetOpc span img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--blue3);
 }
 
 aside{
@@ -125,5 +268,5 @@ aside{
 }
 
 aside > div{
-    padding: 20px;
+    padding: 15px;
 }
