@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
 
 :root {
+    --blacka: rgba(0,0,0, 0.5);
     --gray: rgb(68, 68, 68);
     --gray2: rgb(54, 54, 54);
     --gray3: rgb(110, 110, 110);
@@ -11,6 +12,9 @@
     --blue3:rgb(50, 130, 210);
     --green: rgb(28, 187, 7);
     --red: rgb(213, 39, 39);
+
+    --searcher: rgb(33, 35, 39);
+    --bg2: rgb(22, 24, 28);
 
     --btext: 20px;
     --mtext: 18px;
@@ -49,7 +53,7 @@ nav {
 nav img{
     display: block;
     width: 30px;
-    padding-bottom: 10px;
+    padding: 0 0 10px 10px;
 }
 
 nav > ul{
@@ -73,7 +77,7 @@ nav > ul li:hover{
 
 .tweetButton {
     margin-top: 20px;
-    font-size: var(--btext);
+    font-size: var(--mtext);
     font-weight: bold;
     background-color: var(--blue); /* Green */
     width: 225px;
@@ -97,8 +101,16 @@ nav > ul li:hover{
 .profilePic{
     border-radius: 50%;
     margin-right: 15px;
-    width: 45px;
-    height: 45px;
+    width: 47px;
+    height: 47px;
+}
+
+.profileLoging img{
+    border-radius: 50%;
+    margin-right: 15px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
 }
 
 .profileLoging > div p{
@@ -106,7 +118,7 @@ nav > ul li:hover{
 }
 
 .profileLoging > div p:nth-child(2){
-    color: var(--gray);
+    color: var(--gray3);
 }
 
 .profileLoging > p{
@@ -124,6 +136,11 @@ main > div{
     height: 1px;
     width: 100%;
     background-color: var(--gray);
+}
+
+header > div:first-child{
+    position: sticky;
+    background-color: var(--blacka);
 }
 
 header > div > p{
@@ -182,7 +199,7 @@ header > div:nth-child(2){
     width: 75px;
     height: 40px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
     background-color: var(--blue); /* Green */
     border: none;
     color: white;
@@ -242,12 +259,15 @@ header > div:nth-child(2){
 .tweetOpc span:nth-child(1):hover{
     color: var(--blue2);
 }
+
 .tweetOpc span:nth-child(2):hover{
     color: var(--green);
 }
+
 .tweetOpc span:nth-child(3):hover{
     color: var(--red);
 }
+
 .tweetOpc span:nth-child(4):hover{
     color: var(--blue2);
 }
@@ -265,8 +285,125 @@ button:hover{
 
 aside{
     flex: 0.75;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+.searcher{
+    width: 75%;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--searcher);
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    color: var(--gray);
 }
 
 aside > div{
+    width: 85%;
+    background-color: var(--bg2);
+    padding: 0 0 0 0;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+aside > div p{
+    margin: 0;
+}
+
+aside > div > div{
+    margin: 0;
+    background-color: var(--bg2);
     padding: 15px;
+    border-radius: 15px;
+}
+
+aside > div > div > p:first-child{
+    font-weight: bold;
+    font-size: var(--btext);
+    margin-bottom: 20px;
+}
+
+.topNews{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 10px 0;
+}
+
+.topNews img{
+    position: absolute;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+}
+
+.topNews > div p{
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.topNews > div p:first-child, .topNews > div p:last-child{
+    color: var(--gray3);
+    font-size: var(--stext);
+    font-weight: normal;
+}
+
+aside > div a{
+    color: var(--blue);
+}
+
+.followAcc {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.followAcc > div > p{
+    font-weight: normal;
+    color: var(--gray3);
+    font-size: var(--stext);
+}
+
+.followAcc > div > p:first-child{
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+}
+
+.followAcc button{
+    position: absolute;
+    right: 0;
+    border: none;
+    background-color: white;
+    width: 75px;
+    height: 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+footer a, footer{
+    color: var(--gray);
+    text-decoration: none;
+    margin: 0;
+    font-size: var(--stext);
+    margin: 3px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: row;
+}
+
+footer p{
+    margin: 2px;
+}
+
+footer > div > p{
+    margin-left: 2px;
 }
