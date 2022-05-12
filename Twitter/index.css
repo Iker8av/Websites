@@ -6,6 +6,7 @@
     --gray2: rgb(54, 54, 54);
     --gray3: rgb(110, 110, 110);
     --gray4: rgb(25, 24, 24);
+    --gray5: rgb(222, 222, 222);
 
     --blue: rgb(49, 152, 255);
     --blue2: rgb(36, 153, 255);
@@ -15,7 +16,7 @@
 
     --searcher: rgb(33, 35, 39);
     --bg2: rgb(22, 24, 28);
-
+    --bg2Hover: rgb(28, 31, 35);
     --btext: 20px;
     --mtext: 18px;
     --stext: 14px;
@@ -297,9 +298,13 @@ aside{
     background-color: var(--searcher);
     padding: 10px 20px;
     margin-bottom: 15px;
-    color: var(--gray);
+    font-size: var(--stext);
+    color: var(--gray5);
 }
 
+.searcher:focus{
+    color: var(--gray5);
+}
 aside > div{
     width: 85%;
     background-color: var(--bg2);
@@ -315,7 +320,6 @@ aside > div p{
 aside > div > div{
     margin: 0;
     background-color: var(--bg2);
-    padding: 15px;
     border-radius: 15px;
 }
 
@@ -323,6 +327,7 @@ aside > div > div > p:first-child{
     font-weight: bold;
     font-size: var(--btext);
     margin-bottom: 20px;
+    padding: 15px 15px 0 15px;
 }
 
 .topNews{
@@ -330,14 +335,16 @@ aside > div > div > p:first-child{
     flex-direction: row;
     position: relative;
     margin: 10px 0;
+    padding: 5px 15px;
 }
 
 .topNews img{
     position: absolute;
     right: 0;
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     border-radius: 15px;
+    margin-right: 15px;
 }
 
 .topNews > div p{
@@ -351,16 +358,12 @@ aside > div > div > p:first-child{
     font-weight: normal;
 }
 
-aside > div a{
-    color: var(--blue);
-}
-
 .followAcc {
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 15px 0;
+    padding: 5px 15px;
 }
 
 .followAcc > div > p{
@@ -377,7 +380,7 @@ aside > div a{
 
 .followAcc button{
     position: absolute;
-    right: 0;
+    right: 15px;
     border: none;
     background-color: white;
     width: 75px;
@@ -385,6 +388,15 @@ aside > div a{
     border-radius: 50px;
     font-weight: bold;
     font-size: 13px;
+}
+
+.followAcc button:hover{
+    background-color: var(--gray5);
+}
+
+.topNews:hover, .followAcc:hover{
+    background-color: var(--bg2Hover);
+    cursor: pointer;
 }
 
 footer a, footer{
@@ -406,4 +418,10 @@ footer p{
 
 footer > div > p{
     margin-left: 2px;
+}
+
+aside > div a{
+    display: inline-block;
+    color: var(--blue);
+    margin: 15px;
 }
