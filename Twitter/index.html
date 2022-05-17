@@ -7,20 +7,19 @@
     <title>Twitter</title>
     <link rel="shortcut icon" href="TwitterBlue.png">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
 </head>
 <body>
     <nav>
         <img src="TwitterWhite.png" alt="Twitter logo">
         <ul>
-            <li><span></span>Home</li>
-            <li><span></span>Explore</li>
-            <li><span></span>Notifications</li>
-            <li><span></span>Messages</li>
-            <li><span></span>Bookmarks</li>
-            <li><span></span>Lists</li>
-            <li><span></span>Profile</li>
-            <li><span></span>More</li>
+            <span><img src="" alt="H"><li>Home</li></span>
+            <span><img src="" alt="E"><li>Explore</li></span>
+            <span><img src="" alt="N"><li>Notifications</li></span>
+            <span><img src="" alt="M"><li>Messages</li></span>
+            <span><img src="" alt="B"><li>Bookmarks</li></span>
+            <span><img src="" alt="L"><li>Lists</li></span>
+            <span><img src="" alt="P"><li>Profile</li></span>
+            <span><img src="" alt="M"><li>More</li></span>
         </ul>
         <button class="tweetButton">Tweet</button>
         <div class="profileLoging">
@@ -55,45 +54,49 @@
                 </div>
             </div>
         </header>
-        <div></div>
-        <article class="tweet">
-            <img src="profilePic.jpg" alt="Profile Pic" class="profilePic">
-            <div>
-                <div>
-                    <p>Profile Name Account</p>
-                    <p>@Profile User Account</p>
-                    <p>•</p>
-                    <p>23 hrs</p>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div>Additional content</div>
-                <div class="tweetOpc">
-                    <span><img src="" alt="C">11</span>
-                    <span><img src="" alt="R">28</span>
-                    <span><img src="" alt="L">2,003</span>
-                    <span>R</span>
-                </div>
+        <div class="lineHor"></div>
+        <div class="tweetsSec" id="tweetsSec">
+            <div id="tweet">
+                <article class="tweet" >
+                    <img src="profilePic.jpg" alt="Profile Pic" class="profilePic">
+                    <div>
+                        <div>
+                            <p>Profile Name Account</p>
+                            <p>@Profile User Account</p>
+                            <p>•</p>
+                            <p>23 hrs</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div>Additional content</div>
+                        <div class="tweetOpc">
+                            <span><img src="" alt="C">11</span>
+                            <span><img src="" alt="R">28</span>
+                            <span><img src="" alt="L">2,003</span>
+                            <span>R</span>
+                        </div>
+                    </div>
+                </article>
+                <div class="lineHor"></div>
             </div>
-        </article>
+        </div>
     </main>
     <div></div>
     <aside>
         <input type="text" class="searcher" placeholder="Search Twitter">
         <div>
-            <div>
+            <div id="topNewsSec">
                 <p>What's happening</p>
-                <div class="topNews">
+                <div class="topNews" id="topNews">
                     <div>
-                        <p>Type</p>
-                        <p>Title</p>
-                        <p>Additional Info</p>
+                        <p class="newsContent">Type</p>
+                        <p class="newsContent">Title</p>
+                        <p class="newsContent">Additional Info</p>
                     </div>
-
-                    <img src="" alt="Photo">
+                    <img src="imgDefault.png" alt="Photo">
                 </div>
-                <a>Show More</a>
             </div>
+            <a>Show More</a>
         </div>
         <div>
             <div>
@@ -125,5 +128,6 @@
             <p>© 2022 Twitter, Inc.</p>
         </footer>
     </aside>
+    <script src="index.js"></script>
 </body>
 </html>
