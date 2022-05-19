@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+:root {
+    --blacka: rgba(0,0,0, 0.8);
+    --gray: rgb(68, 68, 68);
+    --gray2: rgb(54, 54, 54);
+    --gray3: rgb(110, 110, 110);
+    --gray4: rgb(25, 24, 24);
+    --gray5: rgb(222, 222, 222);
+
+    --blue: rgb(49, 152, 255);
+    --blue2: rgb(36, 153, 255);
+    --blue3:rgb(50, 130, 210);
+    --green: rgb(28, 187, 7);
+    --red: rgb(213, 39, 39);
+
+    --searcher: rgb(33, 35, 39);
+    --bg2: rgb(22, 24, 28);
+    --bg2Hover: rgb(28, 31, 35);
+
+    --htext: 60px;
+    --b2text: 35px;
+    --btext: 20px;
+    --mtext: 18px;
+    --stext: 14px;
+}
+
+html {
+    color: white;
+    margin: 0;
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    width: 100%;
+    display: flex; 
+    flex-direction: row; 
+    background-color: black; 
+    overflow: hidden;
+}
+
+header {
+    flex: 1 1 60%;
+}
+
+header > img {
+    width: 100%;
+    overflow: hidden;
+}
+
+main {
+    flex: 0.7 1 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 40px;
+}
+
+main img{
+    width: 45px;
+}
+
+main > div {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+main h1{
+    font-size: var(--htext);
+    margin-top: 60px;
+}
+
+main h3{
+    font-size: var(--b2text);
+}
+
+main button{
+    height: 35px;
+    border-radius: 50px;
+    margin: 5px 0;
+    background-color: white;
+    border-style: none;
+    font-size: var(--stext);
+}

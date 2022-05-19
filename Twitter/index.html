@@ -28,19 +28,19 @@
                 <p>Iker Ochoa</p>
                 <p>@Iker_8av</p>
             </div>
-            <p>...</p>
+            <p>. . .</p>
         </div>
     </nav>
     <div></div>
     <main>
+        <div class="homeSquare">
+            <p>Home</p>
+        </div>
         <header>
-            <div>
-                <p>Home</p>
-            </div>
             <div>
                 <img src="profilePic.jpg" alt="Profile Pic" class="profilePic">  
                 <div class="tweetSpace">
-                    <textarea class="tweetText">What's happening?</textarea>
+                    <textarea class="tweetText" placeholder="What's happening?"></textarea>
                     <span>
                         <img src="" alt="Img">
                         <img src="" alt="GIF">
@@ -83,7 +83,9 @@
     </main>
     <div></div>
     <aside>
-        <input type="text" class="searcher" placeholder="Search Twitter">
+        <span class="inputSquare">
+            <input type="text" class="searcher" placeholder="Search Twitter">
+        </span>
         <div>
             <div id="topNewsSec">
                 <p>What's happening</p>
@@ -101,14 +103,16 @@
         <div>
             <div>
                 <p>Who to follow</p>
-                <div class="followAcc">
-                    <img src="profilePic.jpg" alt="Profile Pic" class="profilePic">
-                    <div>
-                        <p>Account Name</p>
-                        <p>@Account ID</p>
-                        <p>Additional Info</p>
+                <div id="followAccSec">
+                    <div class="followAcc" id="followAcc">
+                        <img src="profilePic.jpg" alt="Profile Pic" class="profilePic">
+                        <div>
+                            <p>Account Name</p>
+                            <p>@Account ID</p>
+                            <p>Additional Info</p>
+                        </div>
+                        <button>Follow</button>
                     </div>
-                    <button>Follow</button>
                 </div>
                 <a>Show More</a>
             </div>
