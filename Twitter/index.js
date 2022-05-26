@@ -1,4 +1,15 @@
 class tweet{
+    /**
+     * 
+     * @param {string} name 
+     * @param {string} username 
+     * @param {string} text 
+     * @param {string} addInfo 
+     * @param {int} comm 
+     * @param {int} rt 
+     * @param {int} likes 
+     * @param {date} date 
+     */
     constructor(name, username, text, addInfo, comm, rt, likes, date) {
         this.name = name;
         this.username = username;
@@ -11,8 +22,6 @@ class tweet{
         this.date = date;
     }
 }
-
-///
 
 class topNew{
     constructor(type, title, addInfo) {
@@ -128,4 +137,8 @@ let tweets = document.getElementById("tweet");
 for (let i = 0; i < 5; i++) {
     let tweetClone = tweets.cloneNode(true);
     document.getElementById("tweetsSec").appendChild(tweetClone);
+}
+
+function ejem(a, b){
+    return a;
 }

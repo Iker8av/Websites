@@ -46,6 +46,8 @@ body > div {
     background-color: var(--gray);
 }
 
+/* Starts Nav Section */
+
 nav {
     position: relative;
     vertical-align: left;
@@ -53,6 +55,9 @@ nav {
     padding-left: 75px;
     height: 95vh;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 45%;
 }
 
 nav > img{
@@ -140,9 +145,11 @@ nav > ul > span img{
     right: 0;
 }
 
+/* Starts Main Section */
+
 main {
     margin: 0;
-    flex: 1;
+    flex: 1 1 100%;
     overflow: scroll;
     height: 100vh;
 }
@@ -303,10 +310,12 @@ button:hover{
     background-color: var(--blue3);
 }
 
+/* Starts Aside Section */
+
 aside{
     overflow: scroll;
     height: 98vh;
-    flex: 0.75;
+    flex: 1 1 75%;
 }
 
 .inputSquare{
@@ -457,4 +466,10 @@ aside > div a{
     display: inline-block;
     color: var(--blue);
     margin: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+    nav > ul > span li{
+        display: none;
+    }
 }
